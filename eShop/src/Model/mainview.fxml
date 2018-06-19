@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.MainViewController">
+   <children>
+      <HBox prefHeight="55.0" prefWidth="636.0" spacing="15.0">
+         <children>
+            <Label fx:id="usernameLabel" prefHeight="27.0" prefWidth="168.0" text="Welcome back username!" />
+            <TextField fx:id="searchBar" prefHeight="24.0" prefWidth="251.0" promptText="Search..." />
+            <Button fx:id="cartButton" mnemonicParsing="false" text="My cart" />
+            <Button fx:id="logoutButton" mnemonicParsing="false" text="Log out" />
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="10.0" right="10.0" top="12.0" />
+         </padding>
+      </HBox>
+      <StackPane prefHeight="50.0" prefWidth="630.0">
+         <children>
+            <Button fx:id="moviesButton" mnemonicParsing="false" text="Movies" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </StackPane>
+      <HBox prefHeight="131.0" prefWidth="627.0" spacing="100.0">
+         <children>
+            <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+               <items>
+                  <ImageView fx:id="imovie1" fitHeight="131.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../../Documents/Imágenes/Captura%20de%20pantalla%202017-03-20%20a%20las%2012.14.52.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lmovie1" text="Product name">
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+              <items>
+                  <ImageView fx:id="imovie2" fitHeight="131.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../../Documents/Imágenes/Captura%20de%20pantalla%202017-03-20%20a%20las%2012.14.52.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lmovie2" text="Product name">
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+              </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+               <items>
+                  <ImageView fx:id="imovie3" fitHeight="131.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../../Documents/Imágenes/Captura%20de%20pantalla%202017-03-20%20a%20las%2012.14.52.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lmovie3" text="Product name">
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+               </items>
+            </SplitPane>
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </HBox>
+      <StackPane prefHeight="36.0" prefWidth="628.0">
+         <children>
+            <Button fx:id="musicButton" mnemonicParsing="false" text="Music" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </StackPane>
+      <HBox prefHeight="126.0" prefWidth="628.0" spacing="100.0">
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+         <children>
+            <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+               <items>
+                  <ImageView fx:id="imusic1" fitHeight="131.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../../Documents/Imágenes/Captura%20de%20pantalla%202017-03-20%20a%20las%2012.14.52.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lmusic1" text="Product name">
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+               <items>
+                  <ImageView fx:id="imusic2" fitHeight="131.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../../Documents/Imágenes/Captura%20de%20pantalla%202017-03-20%20a%20las%2012.14.52.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lmusic2" text="Product name">
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+               <items>
+                  <ImageView fx:id="imusic3" fitHeight="131.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../../Documents/Imágenes/Captura%20de%20pantalla%202017-03-20%20a%20las%2012.14.52.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lmusic3" text="Product name">
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+               </items>
+            </SplitPane>
+         </children>
+      </HBox>
+      <StackPane prefHeight="38.0" prefWidth="629.0">
+         <children>
+            <Button fx:id="electronicButton" mnemonicParsing="false" text="Electronic" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </StackPane>
+      <HBox prefHeight="137.0" prefWidth="630.0" spacing="100.0">
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+         <children>
+            <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+               <items>
+                  <ImageView fx:id="ielec1" fitHeight="131.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../../Documents/Imágenes/Captura%20de%20pantalla%202017-03-20%20a%20las%2012.14.52.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lelec1" text="Product name">
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+               <items>
+                  <ImageView fx:id="ielec2" fitHeight="131.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../../Documents/Imágenes/Captura%20de%20pantalla%202017-03-20%20a%20las%2012.14.52.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lelec2" text="Product name">
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+               <items>
+                  <ImageView fx:id="ielec3" fitHeight="131.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../../Documents/Imágenes/Captura%20de%20pantalla%202017-03-20%20a%20las%2012.14.52.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lelec3" text="Product name">
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+               </items>
+            </SplitPane>
+         </children>
+      </HBox>
+   </children>
+</FlowPane>

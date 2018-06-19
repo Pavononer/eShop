@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="657.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+  <children>
+    <StackPane prefHeight="693.0" prefWidth="630.0">
+      <children>
+        <VBox prefHeight="581.0" prefWidth="582.0" spacing="10.0" StackPane.alignment="CENTER">
+          <children>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Welcome to eShop!">
+                           <font>
+                              <Font name="Corbel Bold" size="64.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </StackPane>
+                  <ImageView fx:id="logo" fitHeight="197.0" fitWidth="284.0" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets left="170.0" />
+                     </VBox.margin>
+                  </ImageView>
+            <GridPane alignment="CENTER" prefHeight="120.0" prefWidth="684.0">
+              <children>
+                <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="104.0" text="Username:" />
+                <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="101.0" text="Password:" GridPane.rowIndex="1" />
+                <TextField fx:id="user" text="arturo" GridPane.columnIndex="1" />
+                <TextField fx:id="password" text="wapa" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+              </children>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="109.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="228.0" minWidth="10.0" prefWidth="189.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets top="20.0" />
+                     </opaqueInsets>
+            </GridPane>
+            <StackPane prefHeight="57.0" prefWidth="538.0">
+              <children>
+                <Button fx:id="loginButton" alignment="CENTER" defaultButton="true" mnemonicParsing="false" text="Login" StackPane.alignment="CENTER_LEFT" />
+              </children>
+              <children>
+                <Button fx:id="registerButton" alignment="CENTER" defaultButton="true" mnemonicParsing="false" text="Register" StackPane.alignment="CENTER_RIGHT" />
+              </children>
+              <children>
+                  	 <CheckBox fx:id="checkBox" alignment="CENTER" text="Are you a seller?" StackPane.alignment="CENTER" />
+             </children>
+                     <padding>
+                        <Insets left="10.0" right="10.0" top="20.0" />
+                     </padding>
+            </StackPane>
+          </children>
+               <StackPane.margin>
+                  <Insets left="20.0" right="20.0" />
+               </StackPane.margin>
+        </VBox>
+      </children>
+    </StackPane>
+  </children>
+  <padding>
+    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+  </padding>
+</StackPane>

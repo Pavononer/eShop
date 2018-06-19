@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="700.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.ProductViewController">
+   <children>
+      <ImageView fx:id="iproduct" fitHeight="200" fitWidth="200" layoutX="134.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../Documents/Imágenes/1920x1200_HD_Wallpaper_161_Zixpk.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="nameLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="55.0" layoutY="58.0" prefHeight="27.0" prefWidth="247.0" text="Product name" wrapText="true" />
+ 	  <Label fx:id="desLabel" alignment="TOP_LEFT" contentDisplay="TOP" layoutX="290.0" layoutY="85.0" prefHeight="61.0" prefWidth="339.0" text="Description" wrapText="true">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding></Label>
+      <Button fx:id="buyButton" layoutX="274.0" layoutY="408.0" mnemonicParsing="false" text="Buy it!" />
+      <Label fx:id="priceLabel" layoutX="163.0" layoutY="367.0" text="Price" />
+      <Label fx:id="stockLabel" layoutX="296.0" layoutY="150.0" text="Stock Counter" />
+      <Label fx:id="rateLabel" layoutX="159.0" layoutY="335.0" text="Rating" />
+      <Label fx:id="specific1Label" alignment="TOP_LEFT" layoutX="290.0" layoutY="182.0" prefHeight="54.0" prefWidth="339.0" text="Specific 1" wrapText="true">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding></Label>
+      <Label fx:id="specific2Label" alignment="TOP_LEFT" layoutX="290.0" layoutY="243.0" prefHeight="61.0" prefWidth="339.0" text="Specific 2" wrapText="true">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding></Label>
+      <ListView fx:id="reviewsList" layoutX="116.0" layoutY="497.0" prefHeight="149.0" prefWidth="422.0" />
+      <Label layoutX="102.0" layoutY="468.0" text="Reviews" />
+      <HBox layoutX="16.0" prefHeight="54.0" prefWidth="628.0" spacing="15.0">
+         <children>
+            <Label id="usernameLabel" fx:id="usernameLabel" prefHeight="27.0" prefWidth="168.0" text="Welcome back username!" />
+            <Label prefHeight="27.0" prefWidth="88.0" />
+            <Button fx:id="mainViewButton" mnemonicParsing="false" text="Main Page" />
+            <Button mnemonicParsing="false" text="My cart" />
+            <Button fx:id="logoutButton" mnemonicParsing="false" text="Log out" />
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="10.0" right="10.0" top="12.0" />
+         </padding>
+      </HBox>
+   </children>
+</Pane>
